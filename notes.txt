@@ -1,0 +1,10 @@
+To have HTTPS url you need a SSL Certificate, you can get the SSL Certificate from any Certification Authorities(CA.
+
+But for local demonstration, we are going to use self signed certificate, generated using keytool available in JDK
+Go to the bin directory of your java installation and run the below command:
+
+keytool -genKey -alias demokey -keystore demokeystore -keyalg RSA
+
+
+I am using the default values, one such field is :
+certificate type :- PKCS12.
